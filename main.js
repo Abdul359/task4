@@ -11,9 +11,10 @@ login.addEventListener("click", (e) => {
     if (!emailRegex.test(email.value)) return alert("Please enter valid email");
     if (passwordRegex.test(password.value)) {
         if (password.value === "SmartServTest@123") {
-            console.log(window.location);
-            const dashboard = `${window.location.origin}/task4/dashboard.html`;
-            window.location = `${dashboard}`;
+            window.location.replace("dashboard.html");
+//             console.log(window.location);
+//             const dashboard = `${window.location.origin}/task4/dashboard.html`;
+//             window.location = `${dashboard}`;
         }
     } else {
         return alert("Invalid password");
