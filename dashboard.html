@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"
+            integrity="sha512-TW5s0IT/IppJtu76UbysrBH9Hy/5X41OTAbQuffZFU6lQ1rdcLHzpU5BzVvr/YFykoiMYZVWlr/PX1mDcfM9Qg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <link rel="stylesheet" href="styles.css" />
+        <title>Dashboard</title>
+    </head>
+    <body>
+        <h3 class="head">Company Metrics</h3>
+        <div class="container">
+            <div class="cards_wrap">
+                <div class="card_item">
+                    <div class="inner">
+                        <p class="padd">$406,411.29</p>
+                    </div>
+                </div>
+
+                <div class="card_item">
+                    <div class="inner">
+                        <p>welcome to 2</p>
+                    </div>
+                </div>
+
+                <div class="card_item">
+                    <div class="inner">
+                        <p>welcome to 3</p>
+                    </div>
+                </div>
+
+                <div class="card_item">
+                    <div class="inner">
+                        <p>welcome to 4</p>
+                    </div>
+                </div>
+                <div class="card_item">
+                    <div class="inner">
+                        <p>welcome to 5</p>
+                    </div>
+                </div>
+                <div class="card_item">
+                    <div class="inner">
+                        <p>welcome to 6</p>
+                    </div>
+                </div>
+                <div class="card_item">
+                    <div class="inner">
+                        <p>welcome to 7</p>
+                    </div>
+                </div>
+                <div class="card_item">
+                    <div class="inner">
+                        <p>welcome to 8</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="div11">
+            <h3 class="head11">Revenue By Job Location</h3>
+        </div>
+        <div class="div22">
+            <h3 class="head11">Revenue By Job Type</h3>
+        </div>
+
+        <div class="chartbox div1">
+            <div class="c">
+                <canvas id="myChart"></canvas>
+            </div>
+        </div>
+        <div class="chartbox div2">
+            <div class="c">
+                <canvas id="myChart1"></canvas>
+            </div>
+        </div>
+
+        <script>
+            const ctx = document.getElementById("myChart").getContext("2d");
+            const myChart = new Chart(ctx, {
+                type: "bar",
+                data: {
+                    labels: [
+                        "Everet",
+                        "seattle",
+                        "lynnwood",
+                        "Bithell",
+                        "Mukilteo",
+                        "Edmonds",
+                    ],
+                    datasets: [
+                        {
+                            label: "Revenue for November 2019",
+                            data: [
+                                5000, 10000, 15000, 20000, 25000, 30000, 35000,
+                                40000, 45000, 50000, 55000, 60000,
+                            ],
+                            backgroundColor: ["rgba(72, 190, 154, 1)"],
+                            borderColor: ["rgba(0,0,0,1)"],
+                            borderWidth: 1,
+                        },
+                    ],
+                },
+                options: {
+                    indexAxis: "y",
+                    elements: {
+                        bar: {
+                            borderWidth: 2,
+                        },
+                    },
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            position: "bottom",
+                        },
+                        title: {
+                            display: true,
+                        },
+                    },
+                },
+            });
+
+            const ctx1 = document.getElementById("myChart1").getContext("2d");
+            const myChart1 = new Chart(ctx1, {
+                type: "bar",
+                data: {
+                    labels: [
+                        "Service Plumbing",
+                        "Bid Work HVAC",
+                        "Service HVAC",
+                        "Bid Work Plumbing",
+                        "HWT Replacement",
+                        "Maintenance",
+                        "Material Sale",
+                    ],
+                    datasets: [
+                        {
+                            label: "Revenue for November 2019",
+                            data: [
+                                20000, 40000, 60000, 80000, 100000, 120000,
+                                140000, 55000, 60000,
+                            ],
+                            backgroundColor: ["rgba(72, 190, 154, 1)"],
+                            borderColor: ["rgba(0,0,0,1)"],
+                            borderWidth: 1,
+                        },
+                    ],
+                },
+                options: {
+                    indexAxis: "y",
+                    elements: {
+                        bar: {
+                            borderWidth: 2,
+                        },
+                    },
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            position: "bottom",
+                        },
+                        title: {
+                            display: true,
+                        },
+                    },
+                },
+            });
+        </script>
+    </body>
+</html>

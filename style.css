@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    /* #141414 
+       #70BE58
+       #999898
+    */
+    font-family: "Poppins", sans-serif;
+    font-family: "Roboto Mono", monospace;
+    font-family: "Roboto Slab", serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #222222;
+}
+
+.wrapper form {
+    margin: 50px 0;
+}
+.wrapper {
+    background: #141414;
+    width: 550px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 40px 30px 50px 30px;
+}
+form input {
+    height: 50px;
+    width: 80%;
+    outline: none;
+    text-decoration: none;
+    padding: 0 18px;
+    border-radius: 8px;
+    font-size: 17px;
+}
+
+.img {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+form .feild {
+    width: 100%;
+    margin-top: 25px;
+}
+form .feild1 {
+    width: 100%;
+    margin-top: 35px;
+}
+
+.error-set {
+    color: brown;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.lo {
+    border: 10px;
+    background: #70be58;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+.aa {
+    color: #999898;
+    border-radius: 10px;
+}
+form .forgot-pass {
+    font-size: 18px;
+    margin-top: 25px;
+}

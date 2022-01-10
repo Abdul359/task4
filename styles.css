@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #eeeeee;
+}
+.head {
+    margin-top: 30px;
+    margin-left: 44px;
+}
+
+.head1 {
+    margin-top: 0px;
+    margin-left: 44px;
+}
+.head11 {
+    margin-top: 0px;
+    margin-left: 44px;
+    margin-bottom: 20px;
+}
+.cards_wrap {
+    padding: 20px;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.cards_wrap .card_item {
+    padding: 15px 25px;
+    width: 25%;
+}
+
+.cards_wrap .inner {
+    width: 100%;
+    background-color: white;
+    border-radius: 4px;
+    padding: 20px 20px;
+    min-width: 200px;
+    border-left: 8px solid #48be9a;
+    min-height: 120px;
+}
+
+.chartbox {
+    width: 200px;
+}
+
+.div1 {
+    margin-top: 15px;
+    width: 50%;
+    max-width: 770px;
+    margin-left: 44px;
+    float: left;
+}
+.div11 {
+    width: 50%;
+    float: left;
+}
+.div2 {
+    margin-top: 15px;
+    max-width: 770px;
+    margin-right: 44px;
+    width: 50%;
+    float: right;
+}
+.div22 {
+    width: 50%;
+    float: right;
+}
+
+.c {
+    background: white;
+}
+
+@media screen and (max-width: 900px) {
+    .cards_wrap .card_item {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .cards_wrap .card_item {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1660px) {
+    .div1 {
+        margin-top: 15px;
+        width: 100%;
+        margin-left: 44px;
+    }
+    .div2 {
+        margin-top: 30px;
+        width: 100%;
+        margin-right: 44px;
+    }
+    .chartbox {
+        width: 700px;
+    }
+}
+
+@media screen and (max-width: 789px) {
+    .div1 {
+        margin-top: 15px;
+        width: 50%;
+        margin-left: 44px;
+    }
+    .div2 {
+        margin-top: 15px;
+        width: 50%;
+        margin-right: 44px;
+    }
+    .chartbox {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .div1 {
+        margin-top: 15px;
+        width: 30%;
+        margin-left: 44px;
+    }
+    .padd {
+        padding-top: 30px;
+    }
+    .div2 {
+        margin-top: 15px;
+        width: 30%;
+        margin-right: 44px;
+    }
+    .chartbox {
+        width: 300px;
+    }
+}

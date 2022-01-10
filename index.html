@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+        <link rel="stylesheet" href="style.css" />
+        <meta charset="UTF-8" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&family=Roboto+Mono:wght@300;400;500&family=Roboto+Slab:wght@300;400;500&display=swap"
+            rel="stylesheet"
+        />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Task-3</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <header>
+                <div class="img">
+                    <img
+                        src="./logo.png"
+                        alt="logo"
+                        height="70px"
+                        width="70px"
+                    />
+                </div>
+                <div>
+                    <img src="./name.png" alt="name" width="350px" />
+                </div>
+            </header>
+            <form onsubmit="return validation()">
+                <div class="feild email">
+                    <div class="input">
+                        <input
+                            type="email"
+                            id="email"
+                            required
+                            placeholder="Email"
+                        />
+                    </div>
+                </div>
+
+                <div class="feild password">
+                    <div class="input">
+                        <input
+                            type="password"
+                            required
+                            placeholder="Password"
+                            id="password"
+                        />
+                    </div>
+                </div>
+
+                <div class="feild1 btn">
+                    <input type="submit" value="Login" class="lo login" />
+                </div>
+
+                <div class="forgot-pass">
+                    <a
+                        href="mailto:support@smartserv.io"
+                        target="_blank"
+                        class="aa"
+                        >Forgot your password?</a
+                    >
+                </div>
+                <div class="error-set">
+                    <span id="error-pass"></span>
+                </div>
+            </form>
+        </div>
+
+        <script src="main.js"></script>
+    </body>
+</html>
