@@ -12,7 +12,7 @@ login.addEventListener("click", (e) => {
     if (passwordRegex.test(password.value)) {
         if (password.value === "SmartServTest@123") {
             console.log(window.location);
-            const dashboard = `${window.location.origin}/task3/dashboard.html`;
+            const dashboard = `${window.location.origin}/task4/dashboard.html`;
             window.location = `${dashboard}`;
         }
     } else {
